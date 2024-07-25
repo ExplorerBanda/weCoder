@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>weCoder-Programmer'sHeven</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg p-3 bg-primary-subtle text-primary-emphasis">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">weCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">CyberSecurity</a></li>
+                            <li><a class="dropdown-item" href="#">ArtifitialIntelligence</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">Software Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">log
+                        in</button>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar_ends -->
+    <!-- login_Modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login to weCoder</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Stay Signed in</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup_Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Create Account on weCoder</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Create a strong Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar_ends -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <img class="img-fluid" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    src="avatar_1.jpg" alt="">
+                <h2 class="fw-normal">Sanjay Bansali</h2>
+                <h4 class="fw-normal">Our Head</h4>
+                <p>Always Motivating, just like his profile.</p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 text-center">
+                <img class="img-fluid" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    src="avatar_2.jpg" alt="">
+                <h2 class="fw-normal">Sonali Bindra</h2>
+                <h4 class="fw-normal">Our Best Emplyee</h4>
+                <p>As sweet as her voice.</p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 text-center">
+                <img class="img-fluid" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    src="avatar_3.jpg" alt="">
+                <h2 class="fw-normal">Sahil Kaushal</h2>
+                <h4 class="fw-normal">Our Best Emplyee(Male)</h4>
+                <p>Most Eligible Bachlor.</p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div>
+        <!-- intro-by-row -->
+        <div class="container my-8">
+            <div class="row featurette d-flex align-items-center">
+                <div class="col-md-7 ">
+                    <h2 class="featurette-heading fw-normal lh-1">Meet the Head <span
+                            class="text-body-secondary">Mr.Sanjay Bansali</span></h2>
+                    <p class="lead">Best Head Ever to be foung Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        A consequatur explicabo nulla?</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="img-fluid" class="bd-placeholder-img rounded-circle" width="500" height="500"
+                        src="avatar_1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container my-8">
+            <div class="row featurette d-flex align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Meet the Best Emplyee <span
+                            class="text-body-secondary">Mrs.Sonali Bindra</span></h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum maxime
+                        laboriosam, et dicta animi ab
+                        voluptas sed minima iusto eum..</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="img-fluid" class="bd-placeholder-img rounded-circle" width="500" height="500"
+                        src="avatar_2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container my-8">
+            <div class="row featurette d-flex align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Meet the Best Male Employee <span
+                            class="text-body-secondary">Mr. Sahil Kaushal</span></h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere at quos harum
+                        dignissimos dolores
+                        perspiciatis quae vitae praesentium veritatis..</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="img-fluid" class="img-fluid" class="bd-placeholder-img rounded-circle" width="500"
+                        height="500" src="avatar_3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2024–2025 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
